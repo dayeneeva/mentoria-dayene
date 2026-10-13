@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mentoria para Processos Seletivos Militares</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#F6F2EE;
+    --card:#FFFFFF;
+    --bege:#DCCFC3;
+    --principal:#BDAA99;
+    --escuro:#6D5C4F;
+    --texto:#232323;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:var(--bg);
+    color:var(--texto);
+}
+
+.navbar{
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
+}
+
+.navbar-brand{
+    color:var(--escuro);
+    font-weight:700;
+}
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    background:var(--bg);
+}
+
+.hero h1{
+    font-size:3.5rem;
+    font-weight:800;
+    color:var(--texto);
+    line-height:1.1;
+}
+
+.hero p{
+    font-size:1.15rem;
+    color:#555;
+    max-width:600px;
+}
+
+.btn-principal{
+    background:var(--escuro);
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-principal:hover{
+    background:#58483d;
+    color:white;
+}
+
+.section{
+    padding:100px 0;
+}
+
+.titulo-secao{
+    font-weight:700;
+    margin-bottom:50px;
+    color:var(--texto);
+}
+
+.card-servico{
+    background:var(--card);
+    border:none;
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    transition:.3s;
+    height:100%;
+}
+
+.card-servico:hover{
+    transform:translateY(-8px);
+}
+
+.card-servico h5{
+    color:var(--escuro);
+    font-weight:700;
+}
+
+.card-servico p{
+    color:#666;
+}
+
+.depoimento{
+    background:white;
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.depoimento strong{
+    color:var(--escuro);
+}
+
+.bg-destaque{
+    background:var(--bege);
+}
+
+.foto-perfil{
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+}
+
+.footer{
+    background:var(--escuro);
+    color:white;
+    padding:40px;
+    text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            Sua Mentoria
+        </a>
+
+        <div class="ms-auto">
+            <a href="#sobre" class="btn btn-link text-dark">Sobre</a>
+            <a href="#mentoria" class="btn btn-link text-dark">Mentoria</a>
+            <a href="#depoimentos" class="btn btn-link text-dark">Depoimentos</a>
+            <a href="#" class="btn btn-outline-primary">Entrar</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <span style="
+                background:#DCCFC3;
+                padding:8px 15px;
+                border-radius:30px;
+                font-size:14px;
+                ">
+                    Mentoria Individual
+                </span>
+
+                <h1 class="mt-4">
+                    Processos
+                    Seletivos
+                    Militares
+                </h1>
+
+                <p class="mt-4">
+                    Receba orientação personalizada para entender o edital,
+                    organizar documentos, fortalecer sua avaliação curricular
+                    e evitar erros que podem comprometer sua aprovação.
+                </p>
+
+                <a href="#" class="btn-principal mt-3 d-inline-block">
+                    Quero participar
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 text-center">
+
+                <div class="foto-perfil">
+
+                    <img src="imagens/dayene.jpg"
+                         class="img-fluid">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="mentoria" class="section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2>Como Posso Te Ajudar</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card-servico">
+                    <h5>Análise Documental</h5>
+                    <p>Verificação completa da documentação exigida.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-servico">
+                    <h5>Avaliação Curricular</h5>
+                    <p>Identificação de pontos fortes e oportunidades.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-servico">
+                    <h5>Tira-Dúvidas</h5>
+                    <p>Orientação direta sobre etapas e exigências.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-servico">
+                    <h5>Acompanhamento</h5>
+                    <p>Suporte durante todo o processo seletivo.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="sobre" class="section bg-white">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-5">
+
+                <img src="https://placehold.co/500x600"
+                     class="img-fluid rounded-4 shadow">
+
+            </div>
+
+            <div class="col-lg-7">
+
+                <h2>Quem Sou Eu</h2>
+
+                <p class="mt-4">
+                    Sou militar da Aeronáutica e atuo orientando candidatos
+                    em processos seletivos militares, auxiliando na organização
+                    documental, análise curricular e compreensão dos editais.
+                </p>
+
+                <p>
+                    Meu objetivo é tornar o processo mais claro, organizado
+                    e eficiente para cada candidato.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="depoimentos" class="section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2>Resultados de Alunos</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="depoimento">
+                    <p>
+                        "A mentoria me ajudou a organizar toda a documentação
+                        e entender cada etapa do processo."
+                    </p>
+                    <strong>Aluno aprovado</strong>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="depoimento">
+                    <p>
+                        "Consegui corrigir pendências documentais antes da inscrição."
+                    </p>
+                    <strong>Aluno mentorado</strong>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="depoimento">
+                    <p>
+                        "O acompanhamento trouxe muito mais segurança."
+                    </p>
+                    <strong>Aluno mentorado</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section bg-white">
+
+    <div class="container text-center">
+
+        <h2>Pronto para iniciar sua preparação?</h2>
+
+        <p class="mt-3">
+            Receba orientação personalizada para seu processo seletivo.
+        </p>
+
+        <a href="#" class="btn btn-success btn-lg">
+            Falar no WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <p class="mb-0">
+        © <?php echo date('Y'); ?> - Sua Mentoria
+    </p>
+
+</footer>
+
+</body>
+</html>
