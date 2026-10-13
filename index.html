@@ -12,19 +12,46 @@
 </head>
 <body>
 
+```html
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand fw-bold" href="#">
             Sua Mentoria
         </a>
 
-        <div class="ms-auto">
-            <a href="#sobre" class="btn btn-link text-dark">Sobre</a>
-            <a href="#mentoria" class="btn btn-link text-dark">Mentoria</a>
-            <a href="#depoimentos" class="btn btn-link text-dark">Depoimentos</a>    
+        <div class="ms-auto d-flex align-items-center gap-2">
+            <a href="#sobre" class="btn btn-link text-dark text-decoration-none">Sobre</a>
+            <a href="#mentoria" class="btn btn-link text-dark text-decoration-none">Mentoria</a>
+            <a href="#depoimentos" class="btn btn-link text-dark text-decoration-none">Depoimentos</a>
+
+            <!-- Menu de redes sociais -->
+            <div class="dropdown redes-dropdown">
+                <button
+                    class="btn btn-link text-dark text-decoration-none dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Minhas redes
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                        <a class="dropdown-item" href="https://www.instagram.com/@dayene.eva/" target="_blank" rel="noopener noreferrer">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="https://www.tiktok.com/@dayene.eva" target="_blank" rel="noopener noreferrer">
+                            TikTok
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
+```
+
 
 <section class="hero">
 
