@@ -132,4 +132,27 @@ body{
 }
 
 
+/* Fonte principal do site */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--texto);
+}
+
+/* Títulos com estilo sofisticado */
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Título principal */
+h1 {
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+/* Títulos das seções */
+h2 {
+    font-weight: 600;
+}
+
+
 </style>
