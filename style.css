@@ -122,4 +122,14 @@ body{
     text-align:center;
 }
 
+
+/* Menu de redes sociais ao passar o mouse */
+@media (min-width: 992px) {
+    .redes-dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+
 </style>
