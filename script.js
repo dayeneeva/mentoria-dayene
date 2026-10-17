@@ -7,8 +7,8 @@ const CONFIG = {
   // Número com DDI + DDD, só dígitos. Ex.: 5561999999999
   whatsappNumber: "5561999999999",
   whatsappMessage: "Olá, Dayene! Vim pelo site e quero saber mais sobre a mentoria.",
-  instagramUrl: "https://www.instagram.com/SEU_USUARIO",
-  tiktokUrl: "https://www.tiktok.com/@SEU_USUARIO",
+  instagramUrl: "https://www.instagram.com/dayene.eva",
+  tiktokUrl: "https://www.tiktok.com/@dayene.eva",
   // Foto principal (coloque o arquivo nesse caminho; se não existir, o espaço reservado continua)
   heroPhoto: "assets/foto-dayene.jpg",
 };
