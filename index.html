@@ -1,271 +1,350 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dayene Evangelista | Mentoria para Processos Seletivos Militares</title>
+  <meta name="description" content="Mentoria individual para processos seletivos militares. Do primeiro edital à reta final, com método, organização e acompanhamento próximo. Aprovando com propósito." />
+  <meta name="theme-color" content="#294A5A" />
 
-<title>Mentoria para Processos Seletivos Militares</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dayene Evangelista | Mentoria Militar" />
+  <meta property="og:description" content="Acompanhamento individual para quem quer conquistar uma vaga nas Forças Armadas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png" type="image/png" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
-            Sua Mentoria
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="Dayene Evangelista - início">
+        <span class="brand__logo"><img src="assets/logo.png" alt="Monograma DE" width="52" height="52" /></span>
+        <span class="brand__text">
+          <span class="brand__name">Dayene Evangelista</span>
+          <span class="brand__tag">Mentoria Militar</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#mentoria" class="nav__link">Mentoria</a>
+        <a href="#aprovados" class="nav__link">Aprovados</a>
+        <a href="#contato" class="nav__link">Contato</a>
+        <a href="#" class="btn btn--primary btn--sm nav__cta js-whatsapp" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+          Falar no WhatsApp
         </a>
+      </nav>
 
-        <div class="ms-auto d-flex align-items-center gap-2">
-            <a href="#sobre" class="btn btn-link text-dark text-decoration-none">Sobre</a>
-            <a href="#mentoria" class="btn btn-link text-dark text-decoration-none">Mentoria</a>
-            <a href="#depoimentos" class="btn btn-link text-dark text-decoration-none">Depoimentos</a>
-
-            <!-- Menu de redes sociais -->
-            <div class="dropdown redes-dropdown">
-                <button
-                    class="btn btn-link text-dark text-decoration-none dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Minhas redes
-                </button>
-
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                        <a class="dropdown-item" href="https://www.instagram.com/dayene.eva/" target="_blank" rel="noopener noreferrer">
-                            Instagram
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="https://www.tiktok.com/dayene.eva" target="_blank" rel="noopener noreferrer">
-                            TikTok
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-</nav>
+  </header>
 
+  <main>
 
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <svg class="sun" viewBox="0 0 90 56" aria-hidden="true">
+            <path d="M25 52a20 20 0 0 1 40 0Z" fill="currentColor"/>
+            <g stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              <line x1="45" y1="3" x2="45" y2="14"/>
+              <line x1="18" y1="14" x2="24" y2="22"/>
+              <line x1="72" y1="14" x2="66" y2="22"/>
+              <line x1="3" y1="36" x2="14" y2="36"/>
+              <line x1="76" y1="36" x2="87" y2="36"/>
+            </g>
+          </svg>
 
-<section class="hero">
+          <p class="eyebrow">Mentoria individual</p>
+          <h1 class="hero__title">Dayene Evangelista</h1>
+          <span class="hero__line"></span>
+          <p class="hero__subtitle">Mentoria para processos seletivos militares</p>
+          <p class="hero__slogan">Aprovando com propósito.</p>
+          <p class="hero__text">
+            Acompanhamento individual para quem quer conquistar uma vaga nas Forças Armadas:
+            do primeiro edital à reta final, com método, organização e alguém do seu lado.
+          </p>
 
+          <div class="hero__actions">
+            <a href="#mentoria" class="btn btn--primary">
+              Conhecer a mentoria
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#" class="btn btn--outline js-whatsapp" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <span class="hero__ring" aria-hidden="true"></span>
+          <div class="photo-frame" id="heroPhoto">
+            <!-- Para usar sua foto: salve em assets/foto-dayene.jpg (o script troca sozinho) -->
+            <div class="photo-frame__placeholder">
+              <img class="photo-frame__logo" src="assets/logo.png" alt="" width="68" height="68" />
+              <span class="photo-frame__icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              </span>
+              <p class="photo-frame__title">Espaço reservado para a sua foto</p>
+              <p class="photo-frame__text">Envie a sua foto favorita que eu coloco aqui</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENTORIA ============ -->
+    <section class="section" id="mentoria">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--line">A mentoria</p>
+          <h2 class="section__title">Preparação com método, do edital à reta final</h2>
+          <p class="section__lead">
+            Cada processo seletivo militar tem etapas, exigências e prazos próprios. A mentoria
+            organiza tudo isso em um plano que caiba na sua rotina e caminha com você em cada etapa.
+          </p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h4"/><path d="M14 3l5 5v3"/><path d="M14 3v5h5"/><circle cx="16" cy="17" r="3"/><path d="m18.2 19.2 2.3 2.3"/></svg>
+            </span>
+            <h3 class="card__title">Análise de edital e requisitos</h3>
+            <p class="card__text">Requisitos, vagas, etapas e cronograma do concurso que você escolheu, traduzidos em um plano de ação.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+            </span>
+            <h3 class="card__title">Plano de estudos personalizado</h3>
+            <p class="card__text">Cronograma montado a partir do seu tempo disponível, do seu nível atual e do peso de cada matéria na prova.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+            </span>
+            <h3 class="card__title">Provas objetivas e redação</h3>
+            <p class="card__text">Estratégia de resolução, revisão das matérias do edital e treino de redação com orientação de correção.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+            </span>
+            <h3 class="card__title">Preparação para as demais etapas</h3>
+            <p class="card__text">Orientação sobre testes físicos, inspeção de saúde, documentação e demais fases do processo seletivo.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+            </span>
+            <h3 class="card__title">Foco, rotina e constância</h3>
+            <p class="card__text">Organização da rotina e acompanhamento da disciplina para manter o ritmo mesmo nos dias difíceis.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </span>
+            <h3 class="card__title">Acompanhamento individual</h3>
+            <p class="card__text">Um atendimento próximo, pensado para a sua realidade, com ajustes sempre que o seu desempenho pedir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMO FUNCIONA ============ -->
+    <section class="section section--tight" id="como-funciona">
+      <div class="container">
+        <div class="steps-panel reveal">
+          <h2 class="steps-panel__title">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9z"/><path d="M9 12h6M9 16h6"/></svg>
+            Como funciona
+          </h2>
+
+          <ol class="steps">
+            <li class="step">
+              <span class="step__num">1</span>
+              <h3 class="step__title">Conversa inicial</h3>
+              <p class="step__text">Entendemos o seu objetivo, a sua rotina e o processo seletivo que você quer disputar.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">2</span>
+              <h3 class="step__title">Diagnóstico e plano</h3>
+              <p class="step__text">Montamos o cronograma de estudos e o plano de preparação para cada etapa.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">3</span>
+              <h3 class="step__title">Acompanhamento</h3>
+              <p class="step__text">Encontros e orientações ao longo da preparação, com ajustes conforme o seu desempenho.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">4</span>
+              <h3 class="step__title">Reta final</h3>
+              <p class="step__text">Revisão, simulados e checklist das etapas finais até a prova.</p>
+            </li>
+          </ol>
+
+          <div class="steps-panel__footer">
+            <p>Atendimento individual, online e no seu ritmo.</p>
+            <a href="#" class="btn btn--accent js-whatsapp" target="_blank" rel="noopener">
+              Quero saber mais
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APROVADOS ============ -->
+    <section class="section section--sand" id="aprovados">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--line">Aprovados</p>
+          <h2 class="section__title">Histórias de quem caminhou comigo</h2>
+          <p class="section__lead">Cada aprovação tem uma história de rotina, disciplina e recomeços. Este é o espaço das próximas.</p>
+        </header>
+
+        <div class="approved-head reveal">
+          <h3 class="approved-head__title">Aprovadas e aprovados</h3>
+          <p class="approved-head__note" id="approvedNote">Espaços reservados: as fotos, os nomes e os concursos serão publicados aqui.</p>
+        </div>
+
+        <!-- Os cards são gerados pelo script.js (lista APROVADOS) -->
+        <div class="approved-grid" id="approvedGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="contact reveal">
+          <svg class="sun sun--sm" viewBox="0 0 90 56" aria-hidden="true">
+            <path d="M25 52a20 20 0 0 1 40 0Z" fill="currentColor"/>
+            <g stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              <line x1="45" y1="3" x2="45" y2="14"/>
+              <line x1="18" y1="14" x2="24" y2="22"/>
+              <line x1="72" y1="14" x2="66" y2="22"/>
+              <line x1="3" y1="36" x2="14" y2="36"/>
+              <line x1="76" y1="36" x2="87" y2="36"/>
+            </g>
+          </svg>
+
+          <p class="eyebrow eyebrow--line eyebrow--light">Contato</p>
+          <h2 class="contact__title">Vamos conversar?</h2>
+          <p class="contact__lead">
+            Me acompanhe nas redes para ver o dia a dia da preparação e fale comigo no WhatsApp
+            para entender como funciona a mentoria individual.
+          </p>
+
+          <div class="contact__cards">
+            <a href="#" class="contact-card js-instagram" target="_blank" rel="noopener">
+              <span class="contact-card__icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <h3 class="contact-card__title">Instagram</h3>
+              <p class="contact-card__text">Bastidores da preparação, dicas de estudo e avisos de edital.</p>
+              <span class="contact-card__link">Me seguir
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </span>
+            </a>
+
+            <a href="#" class="contact-card js-tiktok" target="_blank" rel="noopener">
+              <span class="contact-card__icon">
+                <svg class="icon icon--fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 3a5.2 5.2 0 0 0 4 4.5v3.2a8.3 8.3 0 0 1-4-1.1v6.1a6 6 0 1 1-6-6c.3 0 .6 0 .9.1v3.3a2.8 2.8 0 1 0 1.9 2.6V3Z"/></svg>
+              </span>
+              <h3 class="contact-card__title">TikTok</h3>
+              <p class="contact-card__text">Conteúdos curtos sobre a rotina de quem estuda para concurso militar.</p>
+              <span class="contact-card__link">Me seguir
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </span>
+            </a>
+
+            <a href="#" class="contact-card js-whatsapp" target="_blank" rel="noopener">
+              <span class="contact-card__icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+              </span>
+              <h3 class="contact-card__title">WhatsApp</h3>
+              <p class="contact-card__text">Tire suas dúvidas e saiba como funciona a mentoria individual.</p>
+              <span class="contact-card__link">Enviar mensagem
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
     <div class="container">
-
-        <div class="col-lg-6">
-
-                <span style="
-                background:#DCCFC3;
-                padding:8px 15px;
-                border-radius:30px;
-                font-size:14px;
-                ">
-                    Mentorias Individual e Coletiva
-                </span>
-
-               <h1 class="mt-4 text-nowrap" style="text-align: center; font-size: 2.2rem;">
-                    Processos Seletivos Militares
-                </h1>
-
-                <p class="mt-4" style="text-align: justify">
-                    Receba orientação personalizada para entender o edital,
-                    organizar documentos, fortalecer sua avaliação curricular
-                    e evitar erros que podem comprometer sua aprovação.
-                </p>
-
-                <a href="#" class="btn-principal mt-3 d-inline-block">
-                    Quero participar
-                </a>
-
-            </div>
-
-            <div class="col-lg-6 text-center">
-
-                <div class="foto-perfil">
-
-                    <img src="imagens/dayene.jpg"
-                         class="img-fluid">
-
-                </div>
-
-            </div>
-
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="brand__logo brand__logo--lg"><img src="assets/logo.png" alt="Monograma DE" width="80" height="80" /></span>
+          <p class="footer__name">Dayene Evangelista</p>
+          <p class="footer__tag">Mentoria para processos seletivos militares</p>
+          <p class="footer__slogan">Aprovando com propósito.</p>
         </div>
 
+        <div class="footer__col">
+          <h4 class="footer__heading">Navegação</h4>
+          <ul>
+            <li><a href="#mentoria">Mentoria</a></li>
+            <li><a href="#aprovados">Aprovados</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Redes</h4>
+          <ul class="footer__social">
+            <li>
+              <a href="#" class="js-instagram" target="_blank" rel="noopener">
+                <span class="footer__social-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="#" class="js-tiktok" target="_blank" rel="noopener">
+                <span class="footer__social-icon"><svg class="icon icon--fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 3a5.2 5.2 0 0 0 4 4.5v3.2a8.3 8.3 0 0 1-4-1.1v6.1a6 6 0 1 1-6-6c.3 0 .6 0 .9.1v3.3a2.8 2.8 0 1 0 1.9 2.6V3Z"/></svg></span>
+                TikTok
+              </a>
+            </li>
+            <li>
+              <a href="#" class="js-whatsapp" target="_blank" rel="noopener">
+                <span class="footer__social-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg></span>
+                WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> Dayene Evangelista — Todos os direitos reservados.</p>
+        <p class="footer__slogan footer__slogan--sm">Aprovando com propósito.</p>
+      </div>
     </div>
+  </footer>
 
-</section>
-
-<section id="mentoria" class="section">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-            <h2>Como Posso Te Ajudar</h2>
-        </div>
-
-        <div class="row g-4">
-
-            <div class="col-md-3">
-                <div class="card-servico">
-                    <h5>Análise Documental</h5>
-                    <p>Verificação completa da documentação exigida.</p>
-                </div>
-            </div>
-       
-
-            <div class="col-md-3">
-                <div class="card-servico">
-                    <h5>Tira-Dúvidas</h5>
-                    <p>Orientação direta sobre etapas e exigências.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card-servico">
-                    <h5>Acompanhamento</h5>
-                    <p>Suporte durante todo o processo seletivo.</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="sobre" class="section bg-white">
-
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-5">
-
-                <img src="https://placehold.co/500x600"
-                     class="img-fluid rounded-4 shadow">
-
-            </div>
-
-            
-            <div class="col-lg-7" style="text-align: justify">
-            
-                <h2>Conheça sua mentora</h2>
-            
-                <p class="mt-4">
-                    Meu nome é Dayene Evangelista, mas pode me chamar de Day — como a maioria das pessoas costuma me chamar.
-                </p>
-            
-                <p>
-                    Minha trajetória nos processos seletivos militares começou aos 20 anos, quando fui aprovada no
-                    <strong>Serviço Militar Voluntário de Praças (SMV-RM2) da Marinha do Brasil</strong>,
-                    após seis meses de preparação. Essa aprovação me proporcionou a oportunidade de atuar como militar temporária por 3 anos e 4 meses.
-                </p>
-            
-                <p>
-                    Aos 23 anos, depois de dois anos de estudo intensivo, conquistei uma nova aprovação: no
-                    <strong>Estágio de Adaptação e Graduação de Sargentos (EAGS)</strong>,
-                    da Escola de Especialistas de Aeronáutica (EEAR), concurso de carreira da Força Aérea Brasileira.
-                    Com isso, vivenciei os dois caminhos de ingresso: o serviço militar temporário e a carreira militar.
-                </p>
-            
-                <p>
-                    Essas experiências me permitiram conhecer, na prática, os desafios de quem se prepara para ingressar na carreira militar, desde a rotina de estudos até as exigências e particularidades de cada etapa do processo seletivo. Sei que, por trás de cada inscrição, existem dúvidas, expectativas e muita dedicação.
-                </p>
-            
-                <p>
-                    Agora, quero transformar tudo o que aprendi ao longo dessa trajetória em orientação para outros candidatos, ajudando-os a compreender os editais, organizar a documentação e enfrentar cada etapa com mais clareza, planejamento e segurança.
-                </p>
-            
-                <p>
-                    <strong>Meu objetivo é ajudar você a se preparar melhor, evitar erros e percorrer o caminho até a aprovação com mais confiança.</strong>
-                </p>
-            
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="depoimentos" class="section">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-            <h2>Resultados de Alunos</h2>
-        </div>
-
-        <div class="row g-4">
-
-            <div class="col-md-4">
-                <div class="depoimento">
-                    <p>
-                        "A mentoria me ajudou a organizar toda a documentação
-                        e entender cada etapa do processo."
-                    </p>
-                    <strong>Aluno aprovado</strong>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="depoimento">
-                    <p>
-                        "Consegui corrigir pendências documentais antes da inscrição."
-                    </p>
-                    <strong>Aluno mentorado</strong>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="depoimento">
-                    <p>
-                        "O acompanhamento trouxe muito mais segurança."
-                    </p>
-                    <strong>Aluno mentorado</strong>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section bg-white">
-
-    <div class="container text-center">
-
-        <h2>Pronto para iniciar sua preparação?</h2>
-
-        <p class="mt-3">
-            Receba orientação personalizada para seu processo seletivo.
-        </p>
-
-        <a href="#" class="btn btn-success btn-lg">
-            Falar no WhatsApp
-        </a>
-
-    </div>
-
-</section>
-
-<footer class="footer">
-
-    <p class="mb-0">
-        © <?php echo date('Y'); ?> - Sua Mentoria
-    </p>
-
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
