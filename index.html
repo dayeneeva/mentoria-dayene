@@ -11,9 +11,9 @@
   <meta property="og:title" content="Dayene Evangelista | Mentoria Militar" />
   <meta property="og:description" content="Acompanhamento individual para quem quer conquistar uma vaga nas Forças Armadas." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/logoday.png" />
+  <meta property="og:image" content="assets/logo.png" />
 
-  <link rel="icon" href="/logoday.png" type="image/png" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,13 +27,15 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#inicio" class="brand" aria-label="Dayene Evangelista - início">
-        <span class="brand__logo"><img src="/logoday.png" alt="Monograma DE" width="52" height="52" /></span>
+        <span class="brand__logo"><img src="assets/logo.png" alt="Monograma DE" width="52" height="52" /></span>
         <span class="brand__text">
           <span class="brand__name">Dayene Evangelista</span>
+          <span class="brand__tag">Mentoria Militar</span>
         </span>
       </a>
 
       <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#sobre" class="nav__link">Sobre</a>
         <a href="#mentoria" class="nav__link">Mentoria</a>
         <a href="#aprovados" class="nav__link">Aprovados</a>
         <a href="#contato" class="nav__link">Contato</a>
@@ -55,7 +57,7 @@
     <section class="hero" id="inicio">
       <div class="container hero__grid">
         <div class="hero__content reveal">
-          <!--<svg class="sun" viewBox="0 0 90 56" aria-hidden="true">
+          <svg class="sun" viewBox="0 0 90 56" aria-hidden="true">
             <path d="M25 52a20 20 0 0 1 40 0Z" fill="currentColor"/>
             <g stroke="currentColor" stroke-width="3" stroke-linecap="round">
               <line x1="45" y1="3" x2="45" y2="14"/>
@@ -64,21 +66,21 @@
               <line x1="3" y1="36" x2="14" y2="36"/>
               <line x1="76" y1="36" x2="87" y2="36"/>
             </g>
-          </svg>-->
+          </svg>
 
-          <p class="eyebrow">Mentorias individual e coletiva</p>
+          <p class="eyebrow">Mentoria individual</p>
           <h1 class="hero__title">Dayene Evangelista</h1>
           <span class="hero__line"></span>
           <p class="hero__subtitle">Mentoria para processos seletivos militares</p>
-          <!--<p class="hero__slogan">Aprovando com propósito.</p>-->
+          <p class="hero__slogan">Aprovando com propósito.</p>
           <p class="hero__text">
             Acompanhamento individual para quem quer conquistar uma vaga nas Forças Armadas:
             do primeiro edital à reta final, com método, organização e alguém do seu lado.
           </p>
 
           <div class="hero__actions">
-            <a href="#mentoria" class="btn btn--primary">
-              Conhecer a mentoria
+            <a href="#sobre" class="btn btn--primary">
+              Conheça sua mentora
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
             <a href="#" class="btn btn--outline js-whatsapp" target="_blank" rel="noopener">
@@ -101,6 +103,54 @@
               <p class="photo-frame__text">Envie a sua foto favorita que eu coloco aqui</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section section--sand" id="sobre">
+      <div class="container about">
+        <div class="about__visual reveal">
+          <div class="photo-frame photo-frame--about" id="aboutPhoto">
+            <!-- Para usar sua foto: salve em assets/foto-sobre.jpg (o script troca sozinho) -->
+            <div class="photo-frame__placeholder">
+              <img class="photo-frame__logo" src="assets/logo.png" alt="" width="52" height="52" />
+              <span class="photo-frame__icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              </span>
+              <p class="photo-frame__title">Foto da Dayene</p>
+              <p class="photo-frame__text">Espaço reservado para a sua foto</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__content reveal">
+          <p class="eyebrow eyebrow--line">Sobre mim</p>
+          <h2 class="section__title">Prazer, eu sou a Dayene</h2>
+          <!-- Edite os textos abaixo para contar a sua história (formação, experiência, motivação). -->
+          <p class="about__text">
+            Eu acompanho pessoas que sonham com uma vaga nas Forças Armadas e precisam de
+            organização, direção e alguém ao lado durante a preparação.
+          </p>
+          <p class="about__text">
+            Acredito que aprovação não é só estudar mais: é estudar com método, constância e propósito.
+            Por isso a mentoria é individual, e cada plano parte da sua rotina, do seu objetivo e do
+            processo seletivo que você escolheu.
+          </p>
+          <p class="about__text">
+            Se você está começando agora ou já está na reta final, eu caminho com você, etapa por etapa.
+          </p>
+
+          <ul class="about__tags">
+            <li>Método</li>
+            <li>Constância</li>
+            <li>Propósito</li>
+          </ul>
+
+          <a href="#" class="btn btn--outline js-whatsapp" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+            Falar no WhatsApp
+          </a>
         </div>
       </div>
     </section>
@@ -297,7 +347,7 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <span class="brand__logo brand__logo--lg"><img src="/logoday.png" alt="Monograma DE" width="80" height="80" /></span>
+          <span class="brand__logo brand__logo--lg"><img src="assets/logo.png" alt="Monograma DE" width="80" height="80" /></span>
           <p class="footer__name">Dayene Evangelista</p>
           <p class="footer__tag">Mentoria para processos seletivos militares</p>
           <p class="footer__slogan">Aprovando com propósito.</p>
@@ -306,6 +356,7 @@
         <div class="footer__col">
           <h4 class="footer__heading">Navegação</h4>
           <ul>
+            <li><a href="#sobre">Sobre</a></li>
             <li><a href="#mentoria">Mentoria</a></li>
             <li><a href="#aprovados">Aprovados</a></li>
             <li><a href="#contato">Contato</a></li>
