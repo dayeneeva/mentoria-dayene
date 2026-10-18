@@ -7,10 +7,12 @@ const CONFIG = {
   // Número com DDI + DDD, só dígitos. Ex.: 5561999999999
   whatsappNumber: "5561999999999",
   whatsappMessage: "Olá, Dayene! Vim pelo site e quero saber mais sobre a mentoria.",
-  instagramUrl: "https://www.instagram.com/dayene.eva",
-  tiktokUrl: "https://www.tiktok.com/@dayene.eva",
+  instagramUrl: "https://www.instagram.com/SEU_USUARIO",
+  tiktokUrl: "https://www.tiktok.com/@SEU_USUARIO",
   // Foto principal (coloque o arquivo nesse caminho; se não existir, o espaço reservado continua)
   heroPhoto: "assets/foto-dayene.jpg",
+  // Foto da seção "Sobre mim"
+  aboutPhoto: "assets/foto-sobre.jpg",
 };
 
 /* Lista de aprovados. Deixe vazia para mostrar os espaços reservados.
@@ -57,7 +59,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 (function headerScroll() {
   const header = document.getElementById("header");
   const links = document.querySelectorAll(".nav__link");
-  const sections = ["mentoria", "aprovados", "contato"]
+  const sections = ["sobre", "mentoria", "aprovados", "contato"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
 
@@ -76,22 +78,25 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
   window.addEventListener("scroll", onScroll, { passive: true });
 })();
 
-/* ---------- Foto principal (troca o espaço reservado se o arquivo existir) ---------- */
-(function heroPhoto() {
-  const frame = document.getElementById("heroPhoto");
-  if (!frame || !CONFIG.heroPhoto) return;
-
-  const img = new Image();
-  img.onload = () => {
-    const el = document.createElement("img");
-    el.src = CONFIG.heroPhoto;
-    el.alt = "Dayene Evangelista";
-    el.className = "photo-frame__img";
-    frame.innerHTML = "";
-    frame.appendChild(el);
-    frame.classList.add("has-photo");
+/* ---------- Fotos (troca o espaço reservado se o arquivo existir) ---------- */
+(function photos() {
+  const load = (id, src, alt) => {
+    const frame = document.getElementById(id);
+    if (!frame || !src) return;
+    const img = new Image();
+    img.onload = () => {
+      const el = document.createElement("img");
+      el.src = src;
+      el.alt = alt;
+      el.className = "photo-frame__img";
+      frame.innerHTML = "";
+      frame.appendChild(el);
+      frame.classList.add("has-photo");
+    };
+    img.src = src; // se não existir, o onload não dispara
   };
-  img.src = CONFIG.heroPhoto; // se não existir, o onload não dispara
+  load("heroPhoto", CONFIG.heroPhoto, "Dayene Evangelista");
+  load("aboutPhoto", CONFIG.aboutPhoto, "Dayene Evangelista, mentora");
 })();
 
 /* ---------- Aprovados ---------- */
