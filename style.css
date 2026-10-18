@@ -219,6 +219,19 @@ button { font: inherit; cursor: pointer; }
 .section--sand { background: var(--creme-escuro); }
 .section__head { margin-bottom: 40px; }
 
+/* Sobre */
+.about { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: center; }
+.about__visual { max-width: 340px; width: 100%; }
+.photo-frame--about { aspect-ratio: 4 / 5; }
+.about__text { font-size: .98rem; color: var(--texto); max-width: 36em; }
+.about__text + .about__text { margin-top: 14px; }
+.about__tags { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 28px; }
+.about__tags li {
+  padding: 7px 16px; border: 1px solid var(--borda); border-radius: 999px;
+  background: var(--creme-claro); color: var(--petroleo);
+  font-size: 10.5px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase;
+}
+
 /* Cards da mentoria */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .card {
@@ -377,6 +390,8 @@ button { font: inherit; cursor: pointer; }
 @media (max-width: 1024px) {
   .hero__grid { grid-template-columns: 1fr; gap: 44px; }
   .hero__visual { max-width: 360px; margin-left: 0; }
+  .about { grid-template-columns: 1fr; gap: 36px; }
+  .about__visual { max-width: 300px; }
   .cards, .approved-grid { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); row-gap: 32px; }
   .step::before { display: none; }
