@@ -455,3 +455,10 @@ button { font: inherit; cursor: pointer; }
   color: #B96F52; /* terracota */
   margin-top: 1.5rem;
 }
+
+.mentora-texto .mentora-destaque {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #B96F52; /* terracota */
+}
