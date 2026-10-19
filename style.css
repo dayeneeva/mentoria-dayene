@@ -92,6 +92,7 @@ button { font: inherit; cursor: pointer; }
   .section__title--wide { white-space: nowrap; }
 }
 .section__lead { max-width: 40em; font-size: .98rem; color: var(--texto); text-align: justify; hyphens: auto; }
+.section__lead--wide { max-width: none; }
 
 /* ---------- Botões ---------- */
 .btn {
