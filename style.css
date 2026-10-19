@@ -358,6 +358,9 @@ button { font: inherit; cursor: pointer; }
 }
 .contact-card__link .icon { width: 12px; height: 12px; }
 
+.brand__img { height: 46px; width: auto; display: block; }
+@media (max-width: 860px) { .brand__img { height: 38px; } }
+
 /* Footer */
 .footer { border-top: 1px solid var(--borda); padding: 52px 0 0; margin-top: 20px; }
 .footer__grid { display: grid; grid-template-columns: 1.6fr .7fr .7fr; gap: 40px; padding-bottom: 40px; }
