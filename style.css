@@ -87,7 +87,7 @@ button { font: inherit; cursor: pointer; }
   margin: 10px 0 14px;
   max-width: 18em;
 }
-.section__lead { max-width: 40em; font-size: .98rem; color: var(--texto); }
+.section__lead { max-width: 40em; font-size: .98rem; color: var(--texto); text-align: justify; hyphens: auto; }
 
 /* ---------- Botões ---------- */
 .btn {
@@ -249,7 +249,7 @@ button { font: inherit; cursor: pointer; }
 }
 .card__icon .icon { width: 18px; height: 18px; }
 .card__title { font-family: var(--font-serif); font-weight: 400; font-size: 1.15rem; line-height: 1.3; color: var(--petroleo); margin-bottom: 8px; }
-.card__text { font-size: .84rem; line-height: 1.65; color: var(--texto); }
+.card__text { font-size: .84rem; line-height: 1.65; color: var(--texto); text-align: justify; hyphens: auto; }
 
 /* Como funciona */
 .steps-panel {
