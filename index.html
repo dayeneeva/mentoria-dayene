@@ -20,6 +20,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .brand__svg { height: 46px; width: auto; display: block; }
+    @media (max-width: 860px) { .brand__svg { height: 38px; } }
+  </style>
 </head>
 <body>
 
@@ -27,7 +31,12 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#inicio" class="brand" aria-label="Dayene Evangelista - início">
-        <img class="brand__img" src="logo-header.png" alt="Dayene Evangelista - Mentoria Militar" width="1800" height="240" />
+        <svg class="brand__svg" viewBox="0 0 1800 240" role="img" aria-label="Dayene Evangelista - Mentoria Militar">
+          <text x="900" y="130" font-family="'Playfair Display',Georgia,serif" font-size="150" font-weight="500" fill="#294A5A" text-anchor="middle" textLength="1400" lengthAdjust="spacing">Dayene Evangelista</text>
+          <line x1="200" y1="202" x2="534" y2="202" stroke="#B96F52" stroke-width="4"/>
+          <text x="900" y="216" font-family="'Montserrat',Arial,sans-serif" font-size="40" font-weight="600" fill="#B96F52" text-anchor="middle" textLength="640" lengthAdjust="spacing">MENTORIA MILITAR</text>
+          <line x1="1266" y1="202" x2="1600" y2="202" stroke="#B96F52" stroke-width="4"/>
+        </svg>
       </a>
 
       <nav class="nav" id="nav" aria-label="Navegação principal">
