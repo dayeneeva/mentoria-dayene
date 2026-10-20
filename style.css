@@ -328,7 +328,19 @@ button { font: inherit; cursor: pointer; }
 
 /* Escolha sua mentoria */
 .section--flush-top { padding-top: 0; }
-.choose__cards { grid-template-columns: repeat(2, 1fr); }
+.choose__cards { grid-template-columns: repeat(3, 1fr); }
+.contact__lead--wide { max-width: none; }
+
+/* Remove o vão: o texto não estica mais, só a lista empurra o botão para baixo */
+.choose .contact-card__text { flex: none; }
+
+/* Textos justificados nesta seção */
+.choose .contact__lead,
+.choose .contact-card__text,
+.choose__list li {
+  text-align: justify;
+  hyphens: auto;
+}
 .choose__tag {
   align-self: flex-start;
   margin-bottom: 12px;
