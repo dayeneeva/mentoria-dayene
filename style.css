@@ -326,6 +326,33 @@ button { font: inherit; cursor: pointer; }
 }
 .contact-card__link .icon { width: 12px; height: 12px; }
 
+/* Escolha sua mentoria */
+.section--flush-top { padding-top: 0; }
+.choose__cards { grid-template-columns: repeat(2, 1fr); }
+.choose__tag {
+  align-self: flex-start;
+  margin-bottom: 12px;
+  padding: 4px 12px;
+  border: 1px solid rgba(246, 241, 233, .3);
+  border-radius: 999px;
+  font-size: 9.5px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--azul-ceu);
+}
+.choose__list { margin-top: 16px; flex: 1; }
+.choose__list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: .84rem; line-height: 1.55;
+  color: rgba(246, 241, 233, .88);
+}
+.choose__list li + li { margin-top: 9px; }
+.choose__list li::before {
+  content: "✓";
+  position: absolute; left: 0; top: 0;
+  font-weight: 700; color: var(--azul-ceu);
+}
+
+
 /* Footer */
 .footer { border-top: 1px solid var(--borda); padding: 52px 0 0; margin-top: 20px; }
 .footer__grid { display: grid; grid-template-columns: 1.6fr .7fr .7fr; gap: 40px; padding-bottom: 40px; }
