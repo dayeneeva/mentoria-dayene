@@ -26,6 +26,7 @@ const APROVADOS = [
   { nome: "Raiza",  concurso: "QSCON 2026", foto: "assets/aprovados/raiza.jpeg" },
   { nome: "Gessilene",    concurso: "QOCON 2026",  foto: "assets/aprovados/gessilene.jpeg" },
    { nome: "Natália",    concurso: "QOCON 2026",  foto: "assets/aprovados/natalia.jpeg" },
+   { nome: "Vagner",    concurso: "CET 1ª RM 2025/2026",  foto: "assets/aprovados/vagner.jpeg" },
 ];
 const PLACEHOLDERS = 6;
 
