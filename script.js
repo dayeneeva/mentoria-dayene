@@ -22,10 +22,10 @@ const CONFIG = {
    { nome: "Fulano de Tal", concurso: "EsPCEx 2026", foto: "assets/aprovados/fulano.jpg" }
 */
 const APROVADOS = [
-  { nome: "Luciene",  concurso: "QSCON 2026", foto: "assets/aprovados/luciene.jpg" },
-  { nome: "Raiza",  concurso: "QSCON 2026", foto: "assets/aprovados/raiza.jpg" },
-  { nome: "Gessilene",    concurso: "QOCON 2026",  foto: "assets/aprovados/gessilene.jpg" },
-   { nome: "Natália",    concurso: "QOCON 2026",  foto: "assets/aprovados/natalia.jpg" },
+  { nome: "Luciene",  concurso: "QSCON 2026", foto: "assets/aprovados/luciene.jpeg" },
+  { nome: "Raiza",  concurso: "QSCON 2026", foto: "assets/aprovados/raiza.jpeg" },
+  { nome: "Gessilene",    concurso: "QOCON 2026",  foto: "assets/aprovados/gessilene.jpeg" },
+   { nome: "Natália",    concurso: "QOCON 2026",  foto: "assets/aprovados/natalia.jpeg" },
 ];
 const PLACEHOLDERS = 6;
 
