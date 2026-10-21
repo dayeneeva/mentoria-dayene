@@ -413,6 +413,13 @@ button { font: inherit; cursor: pointer; }
   .btn, .card, .approved, .contact-card { transition: none; }
 }
 
+/* Menu com 5 links: um pouco mais compacto no desktop */
+@media (min-width: 861px) {
+  .nav { gap: 22px; }
+  .nav__link { letter-spacing: .2em; }
+  .brand__svg { height: 40px; }
+}
+
 /* ---------- Responsivo ---------- */
 @media (max-width: 1024px) {
   .hero__grid { grid-template-columns: 1fr; gap: 44px; }
