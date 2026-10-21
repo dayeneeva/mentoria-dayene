@@ -22,7 +22,11 @@ const CONFIG = {
    Exemplo:
    { nome: "Fulano de Tal", concurso: "EsPCEx 2026", foto: "assets/aprovados/fulano.jpg" }
 */
-const APROVADOS = [];
+const APROVADOS = [
+  { nome: "Nome do aprovado",  concurso: "EAGS 2026", foto: "assets/aprovados/nome-1.jpg" },
+  { nome: "Nome da aprovada",  concurso: "EEAR 2025", foto: "assets/aprovados/nome-2.jpg" },
+  { nome: "Outro aprovado",    concurso: "SMV 2026",  foto: "assets/aprovados/nome-3.jpg" },
+];
 const PLACEHOLDERS = 6;
 
 /* ---------- Links (WhatsApp, Instagram, TikTok) ---------- */
