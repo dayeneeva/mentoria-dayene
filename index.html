@@ -341,7 +341,17 @@
         </header>
 
         <!-- Os cards são gerados pelo script.js (lista APROVADOS) -->
-        <div class="approved-grid" id="approvedGrid"></div>
+       <div class="carousel reveal">
+        <button class="carousel__btn carousel__btn--prev" id="approvedPrev" type="button" aria-label="Aprovado anterior">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+      
+        <div class="carousel__track" id="approvedGrid"></div>
+      
+        <button class="carousel__btn carousel__btn--next" id="approvedNext" type="button" aria-label="Próximo aprovado">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
       </div>
     </section>
 
