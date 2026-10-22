@@ -454,6 +454,25 @@ button { font: inherit; cursor: pointer; }
 @media (max-width: 1180px) {
   .choose .contact-card__link.choose__btn { font-size: 10px; letter-spacing: .1em; }
 }
+
+/* Chamada final */
+.cta { text-align: center; padding: 60px 52px; }
+.cta .contact__title { margin: 0 0 14px; }
+.cta .contact__lead { margin: 0 auto; max-width: 36em; }
+.cta__btn {
+  position: relative; z-index: 1;
+  margin-top: 30px;
+  padding: 16px 34px;
+  background: var(--terracota);
+  color: var(--creme-claro);
+  box-shadow: 0 10px 24px rgba(185, 111, 82, .38);
+}
+.cta__btn:hover { background: #a9603f; box-shadow: 0 14px 30px rgba(185, 111, 82, .45); }
+
+@media (max-width: 640px) {
+  .cta__btn { width: 100%; }
+}
+
 /* Footer */
 .footer { border-top: 1px solid var(--borda); padding: 52px 0 0; margin-top: 20px; }
 .footer__grid { display: grid; grid-template-columns: repeat(2, auto); justify-content: center; padding-bottom: 40px; }
