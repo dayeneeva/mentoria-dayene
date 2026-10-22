@@ -82,7 +82,7 @@ if (yearEl) {
   const links = document.querySelectorAll(".nav__link");
 
   // Incluída a seção "escolha" (Formatos)
-  const sections = ["sobre", "mentoria", "escolha", "aprovados", "contato"]
+  const sections = ["sobre", "mentoria", "escolha", "aprovados"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
 
