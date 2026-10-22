@@ -229,8 +229,8 @@ button { font: inherit; cursor: pointer; }
 .about__visual { position: relative; margin-bottom: 52px; }
 .about__marcos {
   position: absolute;
-  left: 28px;
-  right: -40px;
+  left: -24px;
+  right: -24px;
   bottom: -52px;
   z-index: 2;
   display: grid;
@@ -566,7 +566,7 @@ button { font: inherit; cursor: pointer; }
   .hero__grid { grid-template-columns: 1fr; gap: 44px; }
   .hero__visual { max-width: 360px; margin-left: 0; }
   .about { grid-template-columns: 1fr; gap: 36px; }
-  .about__visual { max-width: 300px; }
+  .about__visual { max-width: 300px; margin-left: auto; margin-right: auto; }
   .cards, .approved-grid { grid-template-columns: repeat(2, 1fr); }
   .contact__cards { grid-template-columns: 1fr; }
   .contact { padding: 42px 30px; }
