@@ -225,6 +225,49 @@ button { font: inherit; cursor: pointer; }
 .about__visual { max-width: 340px; width: 100%; }
 .photo-frame--about { aspect-ratio: 4 / 5; }
 
+/* Marcos da trajetória sobre a foto (20 / 23) */
+.about__visual { position: relative; margin-bottom: 52px; }
+.about__marcos {
+  position: absolute;
+  left: 28px;
+  right: -40px;
+  bottom: -52px;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.about__marco {
+  background: var(--creme-claro);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  padding: 15px 18px 14px;
+  box-shadow: var(--shadow);
+}
+.about__marco-num {
+  display: block;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--terracota);
+}
+.about__marco-texto {
+  margin-top: 6px;
+  font-size: .8rem;
+  line-height: 1.4;
+  color: var(--petroleo);
+}
+.about__marco-sigla {
+  display: block;
+  margin-top: 5px;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--taupe);
+}
+
 .mentora-texto p {
   text-align: justify;
   hyphens: auto;
@@ -559,4 +602,11 @@ button { font: inherit; cursor: pointer; }
   .footer__col { padding: 0; }
   .footer__col + .footer__col { border-left: 0; border-top: 1px solid var(--borda); padding-top: 28px; }
   .footer__bottom { flex-direction: column; align-items: flex-start; }
+
+  /* Celular: caixinhas lado a lado, embaixo da foto */
+  .about__visual { margin-bottom: 0; }
+  .about__marcos {
+    position: static;
+    margin-top: 14px;
+  }
 }
