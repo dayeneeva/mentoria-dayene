@@ -14,7 +14,7 @@ const CONFIG = {
   heroPhoto: "assets/foto-dayene.jpg",
 
   // Foto da seção "Sobre mim"
-  aboutPhoto: "assets/foto-sobre.jpg",
+  aboutPhoto: "assets/foto-sobre.jpeg",
 };
 
 /* Lista de aprovados. Deixe vazia para mostrar os espaços reservados.
